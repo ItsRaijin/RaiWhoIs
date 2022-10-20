@@ -41,7 +41,6 @@ function App() {
           <div className='leftHome'>
             <img className='pfp' src={pfp}></img>
             <p className='title'>Developer +</p>
-
             <div className='socials'>
               <a href='https://github.com/ItsRaijin'>
                 <img className='social' src={git}></img>
@@ -59,6 +58,7 @@ function App() {
           </div>
         </div>
       </div>
+      
       <div className='scrolldown'>
         <p>scroll down</p>
         <img className='social' src={arrow}></img>
