@@ -1,8 +1,7 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
+import Home from './Home'
 import { useEffect } from "react";
-import pfp from './images/profile.png';
+import pfp from './images/Group.png';
 
 import git from './images/git.png';
 import twt from './images/twt.png';
@@ -12,7 +11,6 @@ import arrow from './images/arrow.png';
 
 
 function App() {
-  const [count, setCount] = useState(0);
   
   useEffect(() => {
     let hidden = document.querySelectorAll('.reveal')
@@ -36,36 +34,16 @@ function App() {
         
       </div>
       <div className="container">
-        <div className='home'>
-
-          <div className='leftHome'>
-            <img className='pfp' src={pfp}></img>
-            <p className='title'>Developer +</p>
-            <div className='socials'>
-              <a href='https://github.com/ItsRaijin'>
-                <img className='social' src={git}></img>
-              </a>
-              <img className='social' src={twt}></img>
-              <img className='social' src={linkd}></img>
-              <p className='title2'>Designer</p>
-            </div>
-          </div>
-
-          <div className='rightHome'>
-            <p className='intro'>Hey There, <br></br>I'm <span className='pink'> Habib. </span></p>
-            <p className='para'>I'm a software developer experienced in Unity, Unreal and web development.
-            I am currently based in Sydney and am confident in an array of languages including <span className='pink'>c#, c++, python and react. </span></p>
-          </div>
-        </div>
+          <Home />
       </div>
       
       <div className='scrolldown'>
-        <p>scroll down</p>
+        <p className='para'>scroll down</p>
         <img className='social' src={arrow}></img>
       </div>
 
       <div className="container">
-        
+
       </div>
 
 

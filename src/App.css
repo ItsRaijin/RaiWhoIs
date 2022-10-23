@@ -4,32 +4,12 @@
 #root {
 
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2vh;
   text-align: center;
   font-family: Lato, sans-serif;
   font-weight: 400;
 }
-@media only screen and (min-width: 1280px) {
-  .home {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      padding: 1rem 0;
-      height: 80vh;
-      align-items: center;
-    }
-}
-@media only screen and (max-width: 1279px) {
-  .home {
-    display: flex;
-      flex-direction: column;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 1rem 0;
-      align-items: center;
-  }
-}
+
 .heading {
   display: flex;
   justify-content: space-between;
@@ -37,83 +17,20 @@
   /*padding: 1rem 0;*/
 }
 
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-evenly;
+  text-align: center;
   flex-direction: row;
   width: 30%;
   flex-wrap: wrap;
-  padding: 1rem 0;
+}
+@media only screen and (min-width: 1180px) {
+
 }
 
-.leftHome{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  white-space: pre;
-  width: 40vh;
-  margin: 1vh;
-}
+@media only screen and (max-width: 1179px) {
 
-.title{
-  font-size: 4vh;
-  align-self: flex-left;
-  font-weight: 400;
-  margin: 0;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-}
-.title2 {
-  font-size: 4vh;
-  align-self: flex-left;
-  font-weight: 400;
-  margin: 0;
-}
-
-.pfp{
-  width: 40vh;
-}
-
-.social{
-  width: 6vh;
-  height: 6vh;
-  margin: 0 0.5rem;
-}
-.socials{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.rightHome{
-  display: flex;
-  flex-direction: column;
-  width: 40vh;
-  white-space: normal;
-  margin: 1vh;
-  display: inline block;
-}
-
-.para{
-  margin-top: 0%;
-  font-weight: 400;
-  align-items: flex-start;
-  text-align: left;
-}
-
-.intro{
-  font-size: 8vh;
-  font-weight: 400;
-  line-height: 10vh;
-  align-items: flex-start;
-  text-align: left;
-  margin-bottom: 0%;
-}
-
-.pink{
-  color: #b6869e;
 }
 
 
@@ -163,4 +80,14 @@
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+.scrolldown{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  animation: bounce 1s infinite;
+  margin: 0%;
 }
