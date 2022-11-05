@@ -26,11 +26,19 @@
   flex-wrap: wrap;
 }
 @media only screen and (min-width: 1180px) {
-
+  .scrolldown {
+      position: absolute;
+  }
 }
 
 @media only screen and (max-width: 1179px) {
+  .scrolldown {
+      position: relative;
+    }
 
+    .navbar{
+      display: none;
+    }
 }
 
 
@@ -81,13 +89,11 @@
   transform: translateY(0);
   opacity: 1;
 }
-
-.scrolldown{
-  position: absolute;
+.scrolldown {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
   animation: bounce 1s infinite;
-  margin: 0%;
+  margin-top: 1%;
 }

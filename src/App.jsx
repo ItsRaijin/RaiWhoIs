@@ -1,11 +1,7 @@
 import './App.css'
+import './Effects.css'
 import Home from './Home'
 import { useEffect } from "react";
-import pfp from './images/Group.png';
-
-import git from './images/git.png';
-import twt from './images/twt.png';
-import linkd from './images/linkdIn.png';
 import arrow from './images/arrow.png';
 
 
@@ -34,12 +30,12 @@ function App() {
         
       </div>
       <div className="container">
-          <Home />
+        <Home />
       </div>
-      
+
       <div className='scrolldown'>
         <p className='para'>scroll down</p>
-        <img className='social' src={arrow}></img>
+        <img className='social hvr-icon-bob' src={arrow}></img>
       </div>
 
       <div className="container">
