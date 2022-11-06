@@ -1,6 +1,7 @@
 import './App.css'
 import './Effects.css'
 import Home from './Home'
+import Capsule from './Capsule'
 import { useEffect } from "react";
 import arrow from './images/arrow.png';
 
@@ -29,17 +30,26 @@ function App() {
         <button className='contact button'>Contact Me</button>
         
       </div>
+
+
       <div className="container">
         <Home />
+        <div className='scrolldown'>
+          <p className='para'>scroll down</p>
+          <img className='social hvr-icon-bob' src={arrow}></img>
+        </div>
       </div>
 
-      <div className='scrolldown'>
-        <p className='para'>scroll down</p>
-        <img className='social hvr-icon-bob' src={arrow}></img>
-      </div>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      
 
       <div className="container">
+        <div className='carousel'>
+          <Capsule />
+          <Capsule />
+          <Capsule />
 
+        </div>
       </div>
 
 

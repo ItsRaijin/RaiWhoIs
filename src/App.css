@@ -90,10 +90,16 @@
   opacity: 1;
 }
 .scrolldown {
+  display: block;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
   animation: bounce 1s infinite;
   margin-top: 1%;
+}
+
+.carousel{
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
 }
