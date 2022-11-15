@@ -28,9 +28,9 @@ function App() {
           </div>
 
           <div className='rightHome'>
-            <p className='intro'>Hey There, <br></br>I'm <span className='pink'> Habib. </span></p>
+            <p className='intro'>Hey There, <br></br>I'm <span className='pink test'> Habib. </span></p>
             <p className='para'>I'm a software developer experienced in Unity, Unreal and web development.
-            I am currently based in Sydney and am confident in an array of languages including <span className='pink'>C#, C++, Python and React. </span></p>
+            I am currently based in Sydney and am confident in an array of languages including <span className='pink'>C#, C++, and React. </span></p>
           </div>
         </div>
     )
