@@ -3,12 +3,12 @@ import { useEffect } from "react";
 import pfp from './images/Group.png';
 function LeftCapsule({img, title, date, description}) { 
     useEffect(() => {
-      let hidden = document.querySelectorAll('.hidden')
+      let hidden = document.querySelectorAll('.hidden1')
       hidden.forEach((item) => observer.observe(item));
   }, [])
     
     return (
-        <div className='leftCapsule hidden'>
+        <div className='leftCapsule hidden1'>
             {/* image */}
             <img className='capsuleImage' src={img}></img>
             {/* text */}
@@ -25,9 +25,9 @@ function LeftCapsule({img, title, date, description}) {
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('show');
+      entry.target.classList.add('show1');
     } else {
-      entry.target.classList.remove('show');
+      //entry.target.classList.remove('show');
     }
   });
 });

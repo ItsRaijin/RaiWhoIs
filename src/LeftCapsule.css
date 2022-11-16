@@ -21,14 +21,14 @@
         flex-direction: row;
     }
 
-    .hidden {
+    .hidden1 {
         opacity: 0;
         transition: all 1s ease-in-out;
         filter: blur(10px);
         transform: translateX(-100%);
     }
 
-    .show {
+    .show1 {
         opacity: 1;
         filter: blur(0);
         transform: translateX(0);
@@ -61,14 +61,14 @@
         display: none;
     }
 
-    .hidden {
+    .hidden1 {
         opacity: 0;
         transition: all 0.5s ease-in-out;
         filter: blur(10px);
         transform: translateY(50%);
     }
 
-    .show {
+    .show1 {
         opacity: 1;
         filter: blur(0);
         transform: translateY(0);
