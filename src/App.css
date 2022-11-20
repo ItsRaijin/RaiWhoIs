@@ -4,7 +4,7 @@
 #root {
 
   margin: 0 auto;
-  padding: 2vh;
+  padding: 1vh;
   text-align: center;
   font-family: Lato, sans-serif;
   font-weight: 400;
@@ -36,10 +36,16 @@
   width: 30%;
   flex-wrap: wrap;
 }
-@media only screen and (min-width: 1180px) {
+@media only screen and (min-width: 1700px) {
   .scrolldown {
       position: absolute;
   }
+}
+
+@media only screen and (max-width: 1699px) {
+  .scrolldown {
+      position: relative;
+    }
 }
 
 @media only screen and (max-width: 1179px) {
@@ -56,6 +62,12 @@
     }
 
     
+}
+
+.scrollImage{
+  width: 6vh;
+  height: 6vh;
+  margin: 0 0.4rem;
 }
 
 

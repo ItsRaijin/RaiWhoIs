@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import pfp from './images/Group.png';
 import arrow from './images/arrow.png';
 import robbin from './images/foxx.png'
+import playmakers from './images/PM.png';
 import { useRef } from 'react';
 
 
@@ -23,7 +24,17 @@ function App() {
   }, [])
   
 
-  const desc1 = <span>Developed a <span className='pink'>Top Down 2D</span> party game in Unity using C#. The game was was awarded <a href="https://www.gamesstudio.org/media-gallery-uts-student-games-showcase-autumn-2022"><span className='pink'>Best Game Developed</span></a> in the UTS games showcase and is currently being aided in publishing by<span className='pink'> Playbox Studios</span>. I operated as a <span className='pink'>Programming and QA</span> lead for this project.</span>
+  const desc1 = <span>Developed a<span className='pink'> Top Down 2D </span>
+    party game in Unity using C#. The game was was awarded <a href="https://www.gamesstudio.org/media-gallery-uts-student-games-showcase-autumn-2022">
+    <span className='pink'>Best Game Developed</span></a> in the UTS games showcase and is currently
+    being aided in publishing by <span className='pink'>
+    Playbox Studios</span>. I operated as a <span className='pink'>
+    Programming and QA</span> lead for this project.</span>
+  
+  const desc2 = <span>Operated as the <span className='pink'>Events Director</span> for UTS Playmakers and
+    was responsible for club management and the hosting of all events. In my 2 years I've managed
+    to host a variety of <span className='pink'>Game Jams, Workshops, and Industry Talks</span> as well
+    as facilitate a club with over a hundred members </span>
   const scrollPosition = useScrollPosition();
   
 if (scrollPosition) {
@@ -69,7 +80,7 @@ if (scrollPosition) {
         <Home />
         <div className='scrolldown' id='top'>
           <p className='para'>scroll down</p>
-          <img className='social hvr-icon-bob' src={arrow} onClick={scrollPortfolio}></img>
+          <img className='scrollImage hvr-icon-bob' src={arrow} onClick={scrollPortfolio}></img>
         </div>
       </div>
 
@@ -87,10 +98,10 @@ if (scrollPosition) {
           />
 
           <RightCapsule
-            img={pfp}
-            title="Project Title"
-            date="Project Date"
-            description={desc1}
+            img={playmakers}
+            title="Playmaker's Executive"
+            date="2020 - 2022"
+            description={desc2}
           />
 
           <LeftCapsule
