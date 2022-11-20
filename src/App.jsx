@@ -33,8 +33,8 @@ function App() {
   
   const desc2 = <span>Operated as the <span className='pink'>Events Director</span> for UTS Playmakers and
     was responsible for club management and the hosting of all events. In my 2 years I've managed
-    to host a variety of <span className='pink'>Game Jams, Workshops, and Industry Talks</span> as well
-    as facilitate a club with over a hundred members </span>
+    to host a variety of <span className='pink'>Game Jams, Workshops, and Industry Talks</span> whilst also facilitating
+    a club with over a hundred members </span>
   const scrollPosition = useScrollPosition();
   
 if (scrollPosition) {
@@ -62,8 +62,9 @@ if (scrollPosition) {
 
 
       <div className="heading">
-
-        <button className='name button'>Habibullah <span className='hideOnSmall'>Saleem</span></button>
+        <a href="/">
+          <button className='name button'>Habibullah Saleem</button>
+        </a>
 
         <div className='navbar'>
           <button className='nav button' onClick={scrollHome}>Home</button>
@@ -71,7 +72,6 @@ if (scrollPosition) {
           <button className='nav button'>About</button>
         </div>
 
-        <button className='contact button'>Contact Me</button>
             
       </div>
 
