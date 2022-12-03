@@ -1,6 +1,6 @@
 import './RightCapsule.css'
 import { useEffect } from "react";
-function RightCapsule({img, title, date, description}) { 
+function RightCapsule({img, title, date, description, link}) { 
     useEffect(() => {
         let hidden = document.querySelectorAll('.hidden')
         hidden.forEach((item) => observer.observe(item));
@@ -9,16 +9,22 @@ function RightCapsule({img, title, date, description}) {
     return (
         <div className='rightCapsule hidden'>
             {/* text */}
-            <div className='capsuleText row'>
+        <div className='capsuleText row'>
+            <a href={link} className="titleLink">
               <h1 className='capsuleTitle'>{title}</h1>
-              <h2 className='capsuleDate'>{date}</h2>
-              <p className='capsuleDescription'>{description}</p>
+            </a>
+            <h2 className='capsuleDate'>{date}</h2>
+            <p className='capsuleDescription'>{description}</p>
             </div>
             {/* image */}
-            <img className='capsuleImage' src={img}></img>
+            <a href={link} className="titleLink">
+              <img className='capsuleImage hvr-icon-bob' src={img}></img>
+            </a>
 
             <div className='capsuleText col'>
-              <h1 className='capsuleTitle'>{title}</h1>
+              <a href={link} className="titleLink">
+                <h1 className='capsuleTitle'>{title}</h1>
+              </a>
               <h2 className='capsuleDate'>{date}</h2>
               <p className='capsuleDescription'>{description}</p>
             </div>

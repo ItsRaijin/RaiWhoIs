@@ -22,7 +22,8 @@
         width: 70vh;
     }
 
-    .socialCol {
+
+    .social{
         display: none;
     }
 
@@ -53,7 +54,7 @@
         width: 70vh;
     }
         
-    .socialCol {
+    .social {
         display: none;
     }
 
@@ -81,6 +82,9 @@
 
     .socialCol {
         display: none;
+    }
+    .social{
+        display: block;
     }
 
      .rightHome {

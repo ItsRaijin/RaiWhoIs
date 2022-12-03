@@ -18,7 +18,7 @@ function App() {
             <div className='rightHome'>
               <p className='intro'>Hey There, <br></br>I'm <span className='pink test'> Habib. </span></p>
               <p className='para'>I'm a software developer experienced in Unity, Unreal and web development.
-              I am currently based in Sydney and am confident in an array of languages including <span className='pink'>C#, C++, and React. </span></p>
+              I am currently based in Sydney and am confident in an array of languages including <span className='pink'>C# and C++. </span></p>
             <div className='socials'>
               <a href='https://github.com/ItsRaijin'>
                   <img className='social hvr-pulse-shrink         ' src={git}></img>
@@ -35,7 +35,7 @@ function App() {
       </div>
       <div className='colSocial'>
             <a href='https://github.com/ItsRaijin'>
-                <img className='socialCol hvr-pulse-shrink         ' src={git}></img>
+                <img className='socialCol hvr-pulse-shrink' src={git}></img>
             </a>
             <a href='https://twitter.com/YaBoiRaijin'>
               <img className='socialCol hvr-pulse-shrink' src={twt}></img>

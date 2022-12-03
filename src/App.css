@@ -44,6 +44,12 @@
       width: 20vw;
       padding-right: 2vw;
     }
+    .contact {
+      width: 60%;
+    }
+    .resume {
+      width: 10vw;
+    }
 }
 
 @media only screen and (max-width: 1699px) {
@@ -53,6 +59,13 @@
     .navbar{
       padding-right: 2vw;
       width: 30vw;
+    }
+
+    .contact {
+      width: 60%;
+    }
+    .resume {
+      width: 10vw;
     }
 }
 
@@ -67,6 +80,12 @@
 
     .hideOnSmall{
       display: none;
+    }
+    .contact {
+      width: 100%;
+    }
+    .resume {
+      width: 25vw;
     }
 
     
@@ -90,6 +109,18 @@
 
 .contact{
   width: 13rem;
+}
+
+.titleLink:link{
+  text-decoration: none;
+}
+
+.titleLink:link:hover{
+  text-decoration: underline;
+}
+
+#a{
+  color: #f2f2f2;
 }
 
 .button::after{
@@ -198,6 +229,43 @@
     opacity: 100%;
   }
 }
+
+.About {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  background-color: #181a1b;
+  color: #f2f2f2;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.resume {
+  object-fit: scale-down;
+}
+
+.description{
+  text-align: center;
+}
+
 
 @keyframes appear {
   0% {
