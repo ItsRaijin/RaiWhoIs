@@ -11,6 +11,7 @@
   overflow-x: hidden;
   overflow-y: hidden;
   scroll-behavior: smooth;
+  color: #f2f2f2;
 }
 
 
@@ -21,12 +22,13 @@
   z-index: 1;
   width: 100vw;
   max-width: 100%;
-  height: 2.5rem;
+  height: 3rem;
   padding: 1vh;
   top:0%;
   justify-content: space-between;
   flex-direction: row;
   background-color: #181a1b;
+  color: #f2f2f2;
 }
 
 .navbar {
@@ -35,6 +37,7 @@
   text-align: center;
   flex-direction: row;
   flex-wrap: wrap;
+  color: #f2f2f2;
 }
 @media only screen and (min-width: 1700px) {
   .scrolldown {
@@ -105,10 +108,15 @@
   font-size: 1.5rem;
   cursor: pointer;
   text-align: center;
+  color: #f2f2f2;
 }
 
 .contact{
   width: 13rem;
+}
+
+.titleLink{
+  color: #b6869e;
 }
 
 .titleLink:link{
@@ -261,6 +269,7 @@
   font-size: 8vh;
   font-weight: 300;
   text-decoration: underline;
+  color: #6e4258;
 }
 
 .resume {
@@ -271,6 +280,7 @@
   text-align: center;
   font-weight: 400;
   width: 80%;
+  line-height: 1.3;
 }
 
 .showContact{
