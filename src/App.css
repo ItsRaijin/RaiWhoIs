@@ -21,7 +21,7 @@
   z-index: 1;
   width: 100vw;
   max-width: 100%;
-  height: 3.0rem;
+  height: 2.5rem;
   padding: 1vh;
   top:0%;
   justify-content: space-between;
@@ -48,7 +48,7 @@
       width: 60%;
     }
     .resume {
-      width: 10vw;
+      width: 7vw;
     }
 }
 
@@ -257,6 +257,11 @@
   align-items: center;
   text-align: left;
 }
+.sectionName{
+  font-size: 8vh;
+  font-weight: 300;
+  text-decoration: underline;
+}
 
 .resume {
   object-fit: scale-down;
@@ -264,6 +269,21 @@
 
 .description{
   text-align: center;
+  font-weight: 400;
+  width: 80%;
+}
+
+.showContact{
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  filter: blur(10px);
+  transform: translateY(50%);
+}
+
+.reveal-visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
 }
 
 

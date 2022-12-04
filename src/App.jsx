@@ -13,6 +13,7 @@ import playmakers from './images/PM.png';
 import SoulPink from './images/SoulEye.png';
 import nose from './images/nose.png';
 import { useRef } from 'react';
+import pdf from './images/Resume.pdf';
 
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
 
   useEffect(() => {
     const top = document.querySelectorAll('scrolldown');
+    let showContact = document.querySelectorAll('.showContact')
+    showContact.forEach((item) => observer.observe(item));
   }, [])
   const scrollPosition = useScrollPosition();
   
@@ -82,6 +85,8 @@ if (scrollPosition) {
       <div className="container">
         <div className='projects' ref={portfolio}>
 
+          <h1 className='sectionName'> Projects </h1>
+
           <LeftCapsule
             img={robbin}
             title="Round Robbin'"
@@ -117,20 +122,24 @@ if (scrollPosition) {
         </div>
       </div>
       
-      <br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br/><br/><br/>
 
       <div className="container">
-        <div className='About' ref={about}>
-          <div className='contact'>
-            <img src={resume} className='resume hvr-pulse-shrink'></img>
+        <h1 className='sectionName'> About Me </h1>
+        <br/>
+        <div className='About showContact'>
+          <div className='contact' ref={about}>
+            <a href={pdf}>
+              <img src={resume} className='resume hvr-pulse-shrink pink'></img>
+            </a>
             <p><span className='pink'>Email: </span>habibleton@gmail.com <br/><br/>
                <span className='pink'>Mobile: </span>+61406510133</p>
           </div>
           <div className='description'>
-            <p>I'm a programmer operating in Sydney with a Bachelor of Science in Games Development. I have experience in both Unity and Unreal, 
-              and have worked on a variety of projects ranging from 2D to 3D. I'm currently working publishing a 2D game on steam, but I'm always looking
+            <p>I'm a programmer operating in Sydney with a <span className='pink'>Bachelor of Science in Games Development.</span> I have experience in both <span className='pink'>Unity and Unreal</span>, 
+              and have worked on a variety of projects ranging from 2D to 3D. I'm currently working publishing a 2D game on steam <span className='pink'>(Round Robbin')</span>, but I'm always looking
               for new opportunities. I am most confident in Programming, QA and Design applications of developments, though I have experience in all areas.
-              My most competent languages are C# and C++, but I am also familiar with Java, Python, Javascript, HTML and CSS. 
+              My most competent languages are <span className='pink'>C# and C++</span>, but I am also familiar with <span className='pink'>Java, Python, Javascript, HTML and CSS.</span> 
             </p>
           </div>
         </div>
@@ -175,6 +184,16 @@ const desc4 = <span> Lead the development of a group of 25~ individuals in creat
 
 // To check the scroll position on page load
 //reveal();
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('reveal-visible');
+    } else {
+      //entry.target.classList.remove('show');
+    }
+  });
+});
 
 
 
