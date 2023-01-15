@@ -257,6 +257,12 @@
   scroll-behavior: smooth;
 }
 
+.descriptor{
+  margin-top: 0;
+  font-weight: 300;
+  color: #b6869e;
+}
+
 .contact {
   display: flex;
   flex-direction: row;

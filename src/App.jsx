@@ -12,6 +12,7 @@ import robbin from './images/foxx.png'
 import playmakers from './images/PM.png';
 import SoulPink from './images/SoulEye.png';
 import nose from './images/nose.png';
+import inertia from './images/inertia.png';
 import { useRef } from 'react';
 import pdf from './images/Resume.pdf';
 
@@ -86,11 +87,12 @@ if (scrollPosition) {
         <div className='projects' ref={portfolio}>
 
           <h1 className='sectionName'> Projects </h1>
+          <p className='descriptor'>(Titles lead to latest playable build of projects)</p>
 
           <LeftCapsule
             img={robbin}
             title="Round Robbin'"
-            date="Jan 2022 - Present"
+            git="https://github.com/VoidAwake/Project-Hawaiian-Shirt"
             description={desc1}
             link="https://leaire.itch.io/round-robbin"
           />
@@ -98,7 +100,7 @@ if (scrollPosition) {
           <RightCapsule
             img={playmakers}
             title="Playmaker's Executive"
-            date="Dec 2020 - Present"
+            git="https://github.com/Playmakers-Development-Team"
             description={desc2}
             link="https://utsplaymakers.github.io/"
           />
@@ -106,18 +108,27 @@ if (scrollPosition) {
           <LeftCapsule
             img={SoulPink}
             title="Soul Searcher"
-            date="Jan 2021 - Dec 2021"
+            git="https://github.com/Playmakers-Development-Team/PDT-2021-Project"
             description={desc3}
             link="https://playmakersdevteam.itch.io/soul-searcher"
           />
 
           <RightCapsule
+            img={inertia}
+            title="Project Inertia"
+            git="https://github.com/david-s-schutte/UTS-GDS2-SwordSurfer"
+            description={desc5}
+            link="https://dr-skittles.itch.io/inertia"
+          />
+
+          <LeftCapsule
             img={nose}
             title="Nose of a Thousand Winds"
-            date="Jan 2022 - Dec 2022"
+            git=""
             description={desc4}
             link="https://playmakersdevteam.itch.io/nose-of-a-thousand-winds"
           />
+
 
         </div>
       </div>
@@ -132,7 +143,7 @@ if (scrollPosition) {
             <a href={pdf}>
               <img src={resume} className='resume hvr-pulse-shrink pink'></img>
             </a>
-            <p><span className='pink'>Email: </span>habibleton@gmail.com <br/><br/>
+            <p><span className='pink'>Email: </span>hsaleemdev@gmail.com <br/><br/>
                <span className='pink'>Mobile: </span>+61406510133</p>
           </div>
           <div className='description'>
@@ -159,25 +170,27 @@ if (scrollPosition) {
     <span className='pink'>Best Game Developed</span></a> in the UTS games showcase and is currently
     being aided in publishing by <span className='pink'>
     Playbox Studios</span>. I operated as a <span className='pink'>
-    Programming and QA</span> lead for this project.</span>
+    Programming and Quality Assurance Lead</span> lead for this project.</span>
   
   const desc2 = <span>Operated as the <span className='pink'>Events Director</span> for UTS Playmakers and
     was responsible for club management and the hosting of all events. In my 2 years I've managed
     to host a variety of <span className='pink'>Game Jams, Workshops, and Industry Talks</span> whilst also facilitating
-  a club with over a hundred members </span>
+  a club with over a hundred members. Also aided in the development of a variety of games within the society as viewable on the git.</span>
     
 const desc3 = <span>Worked in a development group of 19~ individuals to develop a<span className='pink'> Turn Based Rogue-Like </span>
   throughout 2021. I operated in a <span className='pink'>Programming and Quality Assurance</span> position, as well
-  as being the managing<span className='pink'> marketing lead</span> for the product. This resulted in maintaining a
+  as being the managing<span className='pink'> Marketing Lead</span> for the product. This resulted in maintaining a
   constantly shifting codebase, as well as managing the forefront of the game's marketing throughout development.</span>
   
 const desc4 = <span> Lead the development of a group of 25~ individuals in creating a
-  <span className='pink'> 3D Puzzle Platformer </span>game. I was one of 2 <span className='pink'>Producers </span>overseeing all the
+  <span className='pink'> 3D Puzzle Platformer </span>game. I was a <span className='pink'>Producer </span> for the project, overseeing all the
   teams of the project, as well as the <span className='pink'>Design Lead</span> for the game. This included managing 
   the SCRUM development process, leading the entire team and managing leads, as well as defining key design decisions
-  throughout the development of the game.
-  
-</span>
+  throughout the creation of the game.</span>
+
+const desc5 = <span>Created a momentum based <span className='pink'>Platforming 3D</span> speedrunning game. My main
+  focus for this game was operating from a <span className='pink'>Mechanics Programmer and Technical Artist </span>stand point. This included
+  designing and implementing the trick making, shader and particle systems.</span>
 
 
 /*window.addEventListener("scroll", reveal);*/

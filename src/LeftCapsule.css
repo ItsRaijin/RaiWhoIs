@@ -75,6 +75,11 @@
         transform: translateY(0);
     }
 
+    .git{
+        text-align: center;
+        align-self: center;
+    }
+
 
 }
 
@@ -89,10 +94,22 @@
 .capsuleDate {
     font-style: italic;
     /*color: #b6869e or #6e4258;*/
-    color: #b6869e;
+    color: #6e4258;
     margin: 0;
 }
 
 .pink {
     color: #b6869e;
+}
+
+.git{
+    background-color: #6e4258;
+    width: 80px;
+    height: 24px;
+    border-radius: 12px;
+    border: none;
+    color: #181a1b;
+    font-size: 17px;
+    font-weight:500;
+    cursor: pointer;
 }

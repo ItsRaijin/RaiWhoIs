@@ -1,7 +1,7 @@
 import './LeftCapsule.css'
 import { useEffect } from "react";
 import pfp from './images/Group.png';
-function LeftCapsule({img, title, date, description, link}) { 
+function LeftCapsule({img, title, git, description, link}) { 
     useEffect(() => {
       let hidden = document.querySelectorAll('.hidden1')
       hidden.forEach((item) => observer.observe(item));
@@ -14,13 +14,16 @@ function LeftCapsule({img, title, date, description, link}) {
             <img className='capsuleImage' src={img}></img>
           </a>
             {/* text */}
-        <div className='capsuleText'>
-              <a href={link} className="titleLink hvr-icon-bob">
+          <div className='capsuleText'>
+            <a href={link} className="titleLink hvr-icon-bob">
                 <h1 className='capsuleTitle' >{title}</h1>
-              </a>
-              <h2 className='capsuleDate'>{date}</h2>
-              <p className='capsuleDescription'>{description}</p>
-            </div>
+            </a>
+          {/* <h2 className='capsuleDate'>{date}</h2> */}
+            <a href={git} className="hvr-icon-bob">
+            <button className='git hvr-icon-bob'>github</button>
+            </a>
+            <p className='capsuleDescription'>{description}</p>
+          </div>
         </div>
     )
 }

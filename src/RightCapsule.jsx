@@ -1,6 +1,6 @@
 import './RightCapsule.css'
 import { useEffect } from "react";
-function RightCapsule({img, title, date, description, link}) { 
+function RightCapsule({img, title, git, description, link}) { 
     useEffect(() => {
         let hidden = document.querySelectorAll('.hidden')
         hidden.forEach((item) => observer.observe(item));
@@ -13,7 +13,10 @@ function RightCapsule({img, title, date, description, link}) {
             <a href={link} className="titleLink">
               <h1 className='capsuleTitle'>{title}</h1>
             </a>
-            <h2 className='capsuleDate'>{date}</h2>
+          {/* <h2 className='capsuleDate'>{date}</h2> */}
+          <a href={git}>
+            <button className='git' href={git}>github</button>
+          </a>
             <p className='capsuleDescription'>{description}</p>
             </div>
             {/* image */}
@@ -25,7 +28,10 @@ function RightCapsule({img, title, date, description, link}) {
               <a href={link} className="titleLink">
                 <h1 className='capsuleTitle'>{title}</h1>
               </a>
-              <h2 className='capsuleDate'>{date}</h2>
+          {/* <h2 className='capsuleDate'>{date}</h2> */}
+            <a href={git}>
+            <button className='git hvr-icon-bob'>github</button>
+            </a>
               <p className='capsuleDescription'>{description}</p>
             </div>
         </div>

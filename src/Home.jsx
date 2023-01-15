@@ -23,7 +23,7 @@ function App() {
               <a href='https://github.com/ItsRaijin'>
                   <img className='social hvr-pulse-shrink         ' src={git}></img>
               </a>
-              <a href='https://twitter.com/YaBoiRaijin'>
+              <a href='https://twitter.com/RaiDevs'>
                 <img className='social hvr-pulse-shrink' src={twt}></img>
               </a>
               <a href='https://www.linkedin.com/in/habibullah-saleem-765784218/'>
@@ -37,7 +37,7 @@ function App() {
             <a href='https://github.com/ItsRaijin'>
                 <img className='socialCol hvr-pulse-shrink' src={git}></img>
             </a>
-            <a href='https://twitter.com/YaBoiRaijin'>
+            <a href='https://twitter.com/RaiDevs'>
               <img className='socialCol hvr-pulse-shrink' src={twt}></img>
             </a>
             <a href='https://www.linkedin.com/in/habibullah-saleem-765784218/'>
