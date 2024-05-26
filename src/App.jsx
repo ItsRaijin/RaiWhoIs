@@ -11,10 +11,12 @@ import arrow from './images/arrow.png';
 import robbin from './images/foxx.png'
 import playmakers from './images/PM.png';
 import SoulPink from './images/SoulEye.png';
+import Power from './images/Power.png';
 import nose from './images/nose.png';
 import inertia from './images/inertia.png';
 import { useRef } from 'react';
-import pdf from './images/Resume.pdf';
+import pdf from './images/GamesResume.pdf';
+import ue4 from './images/ue4.png';
 
 
 function App() {
@@ -86,8 +88,15 @@ if (scrollPosition) {
       <div className="container">
         <div className='projects' ref={portfolio}>
 
-          <h1 className='sectionName'> Projects </h1>
-          <p className='descriptor'>(Titles lead to latest playable build of projects)</p>
+          <h1 className='sectionName'> Projects Worked On </h1>
+
+          <RightCapsule
+            img={Power}
+            title="Power Lifting"
+            git="https://github.com/josephkimsungha/power-lifting"
+            description={desc7}
+            link="https://zafzal.itch.io/power-lifting"
+          />
 
           <LeftCapsule
             img={robbin}
@@ -129,6 +138,14 @@ if (scrollPosition) {
             link="https://playmakersdevteam.itch.io/nose-of-a-thousand-winds"
           />
 
+          <RightCapsule
+            img={ue4}
+            title="Mirror Mirror"
+            git="https://github.com/JohnCollns/AGPMultiplayerPVE"
+            description={desc6}
+            link="https://github.com/JohnCollns/AGPMultiplayerPVE"
+          />
+
 
         </div>
       </div>
@@ -137,21 +154,22 @@ if (scrollPosition) {
 
       <div className="container">
         <h1 className='sectionName'> About Me </h1>
-        <br/>
         <div className='About showContact'>
+
+          <div className='description'>
+            <p>I'm a programmer operating in Sydney with a <span className='pink'>Bachelor of Science in Games Development.</span> I have experience in both <span className='pink'>Unity and Unreal</span>, 
+              and have worked on a variety of projects ranging from 2D to 3D. I'm currently at <span className='pink'>Epiphany Games'</span>, as a gameplay engineer. I am most confident in Programming, QA and Design applications of developments, though I have experience in all areas.
+              My most competent languages are <span className='pink'>C# and C++</span>, but I am also familiar with <span className='pink'> Javascript, HTML and CSS.</span> 
+            </p>
+          </div>
+          <br />
+          <br/>
           <div className='contact' ref={about}>
             <a href={pdf}>
               <img src={resume} className='resume hvr-pulse-shrink pink'></img>
             </a>
             <p><span className='pink'>Email: </span>hsaleemdev@gmail.com <br/><br/>
                <span className='pink'>Mobile: </span>+61406510133</p>
-          </div>
-          <div className='description'>
-            <p>I'm a programmer operating in Sydney with a <span className='pink'>Bachelor of Science in Games Development.</span> I have experience in both <span className='pink'>Unity and Unreal</span>, 
-              and have worked on a variety of projects ranging from 2D to 3D. I'm currently working publishing a 2D game on steam <span className='pink'>(Round Robbin')</span>, but I'm always looking
-              for new opportunities. I am most confident in Programming, QA and Design applications of developments, though I have experience in all areas.
-              My most competent languages are <span className='pink'>C# and C++</span>, but I am also familiar with <span className='pink'>Java, Python, Javascript, HTML and CSS.</span> 
-            </p>
           </div>
         </div>
       </div>
@@ -191,6 +209,21 @@ const desc4 = <span> Lead the development of a group of 25~ individuals in creat
 const desc5 = <span>Created a momentum based <span className='pink'>Platforming 3D</span> speedrunning game. My main
   focus for this game was operating from a <span className='pink'>Mechanics Programmer and Technical Artist </span>stand point. This included
   designing and implementing the trick making, shader and particle systems.</span>
+
+
+const desc6 = <span>Developed an <span className='pink'>Unreal Engine 4 Multiplayer Game</span>. My contribution to this project was as the
+  <span className='pink'> Mechanics Architect</span> as well as a <span className='pink'>QA Lead</span>. This prioritised perfecting the gameplay loop to
+  be a responsive and satisfying experience, with iteration through QA feedback.</span>
+
+const desc7 = <span>Worked on a <span className='pink'>Gamedev.JS</span> game submission in a team. This
+  project achieved an <span className='pink'>11th</span> space out of 232 submissions and was made entirely within
+  <span className='pink'>JavaScript </span>without the use of a game engine framework. My responsibilities included incorporating certain audio queues and 
+  implementing a couple of the in game minigames.
+</span>
+
+const desc8 = <span>Developed an <span className='pink'>Unreal Engine 4 Multiplayer Game</span>. My contribution to this project was as the
+<span className='pink'> Mechanics Architect</span> as well as a <span className='pink'>QA Lead</span>. This prioritised perfecting the gameplay loop to
+be a responsive and satisfying experience, with iteration through QA feedback.</span>
 
 
 /*window.addEventListener("scroll", reveal);*/
